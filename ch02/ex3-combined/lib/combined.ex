@@ -1,18 +1,18 @@
 defmodule Combined do
   @moduledoc """
-  Documentation for Combined.
+  Module Combined to demonstrate the usage of functions from other modules.
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Combined.hello
-      :world
-
+  height_to_mph
+  Get velocity in miles per hour when the object is at height "meters".
+  Params:
+    meters(float):
+      Height in meters.
+  Returns(float):
+    Velocity value in miles per hour.
   """
-  def hello do
-    :world
+  def height_to_mph(meters) do
+    Convert.mps_to_mph(Drop.fall_velocity(meters))
   end
 end
