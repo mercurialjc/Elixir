@@ -1,6 +1,6 @@
 defmodule Drop do
   @moduledoc """
-  Module for calculating and converting fall velocities
+  Module Drop for calculating and converting fall velocities
   """
 
   @doc """
