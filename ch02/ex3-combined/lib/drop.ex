@@ -23,6 +23,7 @@ defmodule Drop do
       Instantaneous velocity of the falling object at distance 'distance'.
   """
   def fall_velocity(distance) do
-    :math.sqrt(2 * 9.81 * distance)
+    import :math, only [sqrt: 1]
+    sqrt(2 * 9.81 * distance)
   end
 end

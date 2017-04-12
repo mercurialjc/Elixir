@@ -2,6 +2,7 @@ defmodule Drop do
   @moduledoc """
   Module Drop for calculating fall velocities
   """
+  import :math, only: [sqrt: 1]
 
   @doc """
   fall_velocity
