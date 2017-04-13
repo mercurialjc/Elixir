@@ -14,9 +14,7 @@ defmodule Combined do
   Returns(float):
     Velocity value in miles per hour.
   """
-
   @spec height_to_mph(float()) :: float()
-
   def height_to_mph(meters) do
     mps_to_mph(fall_velocity(meters))
   end

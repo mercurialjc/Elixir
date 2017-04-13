@@ -22,9 +22,7 @@ defmodule Drop do
     Returns(float):
       Instantaneous velocity of the falling object at distance 'distance'.
   """
-
   @spec fall_velocity(number()) :: float()
-
   def fall_velocity(distance) do
     :math.sqrt(2 * 9.81 * distance)
   end

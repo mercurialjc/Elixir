@@ -14,9 +14,7 @@ defmodule Convert do
     Returns(float):
       According value in miles per hour.
   """
-
   @spec mps_to_mph(float()) :: float()
-
   def mps_to_mph(mps) do
     2.23693629 * mps
   end
@@ -32,9 +30,7 @@ defmodule Convert do
     Returns(float):
       According value in kilometers per hour.
   """
-
   @spec mps_to_kph(float()) :: float()
-
   def mps_to_kph(mps) do
     3.6 * mps
   end
