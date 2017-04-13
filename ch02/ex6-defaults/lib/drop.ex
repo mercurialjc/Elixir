@@ -16,7 +16,7 @@ defmodule Drop do
       v = :math.sqrt(2gd)
 
     Params:
-      distance(float):
+      distance(number):
         Distance that the falling object has travelled.
       gravity(float):
         Gravity coefficient to specify. Defaults to 9.81 on the earth.
@@ -24,6 +24,9 @@ defmodule Drop do
     Returns(float):
       Instantaneous velocity of the falling object at distance 'distance'.
   """
+
+  @spec fall_velocity(number()) :: float()
+
   def fall_velocity(distance, gravity \\ 9.81) do
     :math.sqrt(2 * gravity * distance)
   end

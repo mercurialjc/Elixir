@@ -3,6 +3,7 @@ defmodule Combined do
   Module for combining drop and convert logic, with imported Convert
   """
   import Convert
+  import Drop
 
   @doc """
   height_to_mph
@@ -13,7 +14,10 @@ defmodule Combined do
   Returns(float):
     Velocity value in miles per hour.
   """
+
+  @spec height_to_mph(float()) :: float()
+
   def height_to_mph(meters) do
-    Convert.mps_to_mph(Drop.fall_velocity(meters))
+    mps_to_mph(fall_velocity(meters))
   end
 end

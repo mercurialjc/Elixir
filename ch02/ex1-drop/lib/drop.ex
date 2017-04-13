@@ -17,12 +17,15 @@ defmodule Drop do
       v = :math.sqrt(2gd)
 
     Params:
-      distance(float):
+      distance(number):
         Distance that the falling object has travelled.
     
     Returns(float):
       Instantaneous velocity of the falling object at distance 'distance'.
   """
+
+  @spec fall_velocity(number()) :: float()
+
   def fall_velocity(distance) do
     sqrt(2 * 9.81 * distance)
   end
@@ -38,6 +41,9 @@ defmodule Drop do
     Returns(float):
       According value in miles per hour.
   """
+
+  @spec mps_to_mph(float()) :: float()
+
   def mps_to_mph(mps) do
     2.23693629 * mps
   end
@@ -53,6 +59,9 @@ defmodule Drop do
     Returns(float):
       According value in kilometers per hour.
   """
+
+  @spec mps_to_kph(float()) :: float()
+
   def mps_to_kph(mps) do
     3.6 * mps
   end
